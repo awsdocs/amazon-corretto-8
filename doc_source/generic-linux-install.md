@@ -19,6 +19,12 @@ To use the Corretto Apt repositories on Debian\-based systems, such as Ubuntu, i
  sudo add-apt-repository 'deb https://apt.corretto.aws stable main'
 ```
 
+If the `add-apt-repository` doesn't work, try:
+
+```
+sudo add-apt-repository 'deb [arch=amd64] https://apt.corretto.aws stable main'
+```
+
 After the repository is added, you can install Corretto 8 by running this command:
 
 **Example**  
@@ -29,7 +35,8 @@ After the repository is added, you can install Corretto 8 by running this comman
 
 ### Download and Install the Debian Package Manually<a name="debian-deb-install-instruct"></a>
 
-1.  Download the Linux `.deb` file from the [Downloads](downloads-list.md) page\. Before you install the JDK, install the `java-common` package\.   
+1.  Download the Linux `.deb` file from the [Downloads](downloads-list.md) page\. Before you install the JDK, install the `java-common` package\. 
+
 **Example**  
 
    ```
@@ -37,6 +44,7 @@ After the repository is added, you can install Corretto 8 by running this comman
    ```
 
 1.  Install the `.deb` file by using `dpkg --install`\. e\.g\. install x86\_64 deb using the following command:  
+
 **Example**  
 
    ```
